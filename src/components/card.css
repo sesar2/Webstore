@@ -1,0 +1,70 @@
+.card {
+    width: 305px;
+    height: 580px;
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    box-sizing: border-box;
+    
+}
+
+.card-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    padding: 20px;
+    
+}
+
+.item-image {
+    height: 398px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.item-name {
+    font-size: 18px;
+}
+
+.item-rating {
+    font-size: 14px;
+    padding-top: 8px;
+    font-weight: 300;
+}
+
+.item-price {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.addtocard {
+    position: absolute;
+    font-size: 75%;
+    color: white;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    padding: 5px;
+    border-radius: 6px;
+    right: 0;
+    bottom: -35px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.card:hover .addtocard{
+    opacity: 100;
+    transform: translateY(-33px);
+}
+
+.addtocard:hover {
+    background-color: black;
+}

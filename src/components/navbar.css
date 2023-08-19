@@ -1,0 +1,120 @@
+.navbar {
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  height: 5rem;
+  font-size: 17px;
+  position: fixed;
+  z-index: 10000;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  top: 0;
+}
+
+
+.nav-items {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  
+}
+.nav-item {
+
+  font-size: 17px;
+  padding: 1rem 0;
+  cursor: pointer;
+  z-index: 100000;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)),
+    linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 250ms;
+}
+.arrow {
+  transition: 300ms;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.nav-item:hover {
+  background-size: 0 2px, 100% 2px;
+}
+.nav-cats {
+  display: flex;
+  gap: 50px;
+}
+
+.cur-cart-container {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown-items {
+  padding: 70px 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 15%;
+}
+
+
+.dropdown {
+  z-index: 10000;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 11rem;
+  opacity: 0;
+  transition: all 200ms;
+  left: 0;
+  top: 40px;
+}
+
+.currency-dropdown {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+}
+
+.cur-dropdown {
+  position: absolute;
+  background-color: white;
+  padding: 1rem;
+  width: 4rem;
+  left: -1rem;
+  top: 50px;
+}
+
+.dropdown-item {
+  display: none;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-item:hover {
+    font-weight: 700;
+}
+
+.currency:hover {
+    font-weight: 700;
+}
+.carts {
+  position: relative;
+}
+.item-count {
+  color: white;
+  background-color: red;
+  text-align: center;
+  height: 16px;
+  width: 16px;
+  font-size: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: -8px;
+
+}

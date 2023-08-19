@@ -1,0 +1,91 @@
+.hero-container {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.hero-img {
+    width: 100%;
+    object-fit: cover;
+    transform: translateY(-20%);  
+}
+
+.text-container {
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 26rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin: 8% 0 0 9%;
+    cursor: default;
+    
+}
+.text-container h1 {
+    font-weight: 900;
+    font-size: 65px;
+}
+
+.text-container h2 {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.shop-now {
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    transition: 200ms;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+.shop-now:hover {
+    color: white;
+    background-color: black;
+}
+
+.categories-container {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 30px;
+    height: 200px;
+}
+.category {
+    width: 32%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.category-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    transition: 200ms;
+}
+
+.category-text {
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category:hover .category-img{
+    transform: scale(1.05);
+}
